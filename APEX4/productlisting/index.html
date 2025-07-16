@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🛍️ Product Listing</h1>
+    
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+      </select>
+
+      <select id="priceFilter">
+        <option value="all">All Prices</option>
+        <option value="0-500">Under ₹500</option>
+        <option value="500-1000">₹500–₹1000</option>
+        <option value="1000+">Above ₹1000</option>
+      </select>
+
+      <select id="sortOption">
+        <option value="default">Sort by Rating</option>
+        <option value="high">High to Low</option>
+        <option value="low">Low to High</option>
+      </select>
+    </div>
+
+    <div id="productList" class="product-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
